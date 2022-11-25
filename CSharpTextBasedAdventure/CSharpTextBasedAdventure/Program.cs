@@ -9,6 +9,9 @@
             String confirmChoise = "";
 
             Console.WriteLine("Hello, World!");
+            Player.MainClass();
+            Console.WriteLine(Player.PlayerAttributes["level"].ToString());
+
             Console.WriteLine("This is what you say when you enter the world.");
             Console.WriteLine("First of all, let me ask you. What do you want you're name to be?");
             playerChoise = Console.ReadLine();

@@ -14,6 +14,8 @@ namespace CSharpTextBasedAdventure
         private static String playerClass;
 
         //Attributes
+        private static Dictionary<string, int> playerAttributes = new Dictionary<string, int>();
+
         private static int exp = 0;
         private static int level = 1;
         private static int attackDamage = 0;
@@ -21,6 +23,17 @@ namespace CSharpTextBasedAdventure
         private static int defence = 0;
         private static int agility = 0;
         private static int luck = 0;
+
+        public static void MainClass()
+        {
+            playerAttributes.Add("exp", 0);
+            playerAttributes.Add("level", 1);
+            playerAttributes.Add("attackDamage", 0);
+            playerAttributes.Add("maxHealth", 0);
+            playerAttributes.Add("defence", 0);
+            playerAttributes.Add("agility", 0);
+            playerAttributes.Add("luck", 0);
+        }
 
 
         public static int Exp { get => exp; set => exp = value; }
@@ -33,5 +46,6 @@ namespace CSharpTextBasedAdventure
         public static int Defence { get => defence; set => defence = value; }
         public static int Agility { get => agility; set => agility = value; }
         public static int Luck { get => luck; set => luck = value; }
+        public static Dictionary<string, int> PlayerAttributes { get => playerAttributes; set => playerAttributes = value; }
     }
 }
