@@ -9,24 +9,29 @@ namespace CSharpTextBasedAdventure
     internal class Player
     {
         //Base Attributes
-        private String playerName;
-        private String playerRace;
-        private PlayerClass playerClass;
+        private static String playerName;
+        private static String playerRace;
+        private static String playerClass;
 
         //Attributes
-        private int attackDamage = 0;
-        private int health = 0;
-        private int defence = 0;
-        private int agility = 0;
-        private int luck = 0;
+        private static int exp = 0;
+        private static int level = 1;
+        private static int attackDamage = 0;
+        private static int maxHealth = 0;
+        private static int defence = 0;
+        private static int agility = 0;
+        private static int luck = 0;
 
-        public string PlayerName { get => playerName; set => playerName = value; }
-        internal PlayerRace PlayerRace { get => playerRace; set => playerRace = value; }
-        internal PlayerClass PlayerClass { get => playerClass; set => playerClass = value; }
-        public int AttackDamage { get => attackDamage; set => attackDamage = value; }
-        public int Health { get => health; set => health = value; }
-        public int Defence { get => defence; set => defence = value; }
-        public int Agility { get => agility; set => agility = value; }
-        public int Luck { get => luck; set => luck = value; }
+
+        public static int Exp { get => exp; set => exp = value; }
+        public static int Level { get => level; set => exp = value; } 
+        public static string PlayerName { get => playerName; set => playerName = value; }
+        public static string PlayerRace { get => playerRace; set => playerRace = value; }
+        public static string PlayerClass { get => playerClass; set => playerClass = value; }
+        public static int AttackDamage { get => attackDamage; set => attackDamage = value; }
+        public static int MaxHealth { get => maxHealth; set => maxHealth = value; }
+        public static int Defence { get => defence; set => defence = value; }
+        public static int Agility { get => agility; set => agility = value; }
+        public static int Luck { get => luck; set => luck = value; }
     }
 }
