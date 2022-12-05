@@ -24,7 +24,7 @@ namespace CSharpTextBasedAdventure
         private static int agility = 0;
         private static int luck = 0;
 
-        public static void MainClass()
+        public static void BaseCharacter()
         {
             playerAttributes.Add("exp", 0);
             playerAttributes.Add("level", 1);
@@ -36,16 +36,16 @@ namespace CSharpTextBasedAdventure
         }
 
 
-        public static int Exp { get => exp; set => exp = value; }
-        public static int Level { get => level; set => exp = value; } 
+        //public static int Exp { get => exp; set => exp = value; }
+        //public static int Level { get => level; set => exp = value; } 
         public static string PlayerName { get => playerName; set => playerName = value; }
         public static string PlayerRace { get => playerRace; set => playerRace = value; }
         public static string PlayerClass { get => playerClass; set => playerClass = value; }
-        public static int AttackDamage { get => attackDamage; set => attackDamage = value; }
-        public static int MaxHealth { get => maxHealth; set => maxHealth = value; }
-        public static int Defence { get => defence; set => defence = value; }
-        public static int Agility { get => agility; set => agility = value; }
-        public static int Luck { get => luck; set => luck = value; }
+        //public static int AttackDamage { get => attackDamage; set => attackDamage = value; }
+        //public static int MaxHealth { get => maxHealth; set => maxHealth = value; }
+        //public static int Defence { get => defence; set => defence = value; }
+        //public static int Agility { get => agility; set => agility = value; }
+        //public static int Luck { get => luck; set => luck = value; }
         public static Dictionary<string, int> PlayerAttributes { get => playerAttributes; set => playerAttributes = value; }
     }
 }

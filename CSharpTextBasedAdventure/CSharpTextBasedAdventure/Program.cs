@@ -8,8 +8,7 @@
             String playerChoise = "";
             String confirmChoise = "";
 
-            Console.WriteLine("Hello, World!");
-            Player.MainClass();
+            Player.BaseCharacter();
             Console.WriteLine(Player.PlayerAttributes["level"].ToString());
 
             Console.WriteLine("This is what you say when you enter the world.");
@@ -46,9 +45,9 @@
             Console.Clear();
 
             Console.WriteLine("Last but not least, you get to choose the class of you're character.");
-            Console.WriteLine("Warrior:\nAttackDamage: +2\nDefence: +2\nAgility: -1\n Luck: -1");
-            Console.WriteLine("Wizard:\nAttackDamage: -2\nMaxHealth: +5\nDefence: +1\nAgility: -2\nLuck: +1");
-            Console.WriteLine("Assassin:\nAttackDamage: -1\nAgility: +5\nLuck: +2");
+            Console.WriteLine("Warrior:\nAttackDamage: +2\nDefence: +2\nAgility: -1\n Luck: -1\n");
+            Console.WriteLine("Wizard:\nAttackDamage: -2\nMaxHealth: +5\nDefence: +1\nAgility: -2\nLuck: +1\n");
+            Console.WriteLine("Assassin:\nAttackDamage: -1\nAgility: +5\nLuck: +2\n");
             Console.WriteLine("Warrior / Wizard / Assassin");
             playerChoise = Console.ReadLine();
             Console.WriteLine("Are you sure you want this to be you're class: " + playerChoise + "\nY/N");
@@ -63,10 +62,7 @@
             Console.Out.Flush();
             Console.Clear();
 
-            Console.WriteLine(Player.PlayerName);
-            Console.WriteLine(Player.PlayerRace);
-            Console.WriteLine(Player.PlayerClass);
-            Console.WriteLine(Player.AttackDamage);
+            Console.WriteLine(Player.PlayerAttributes["maxHealth"]);
         }
 
         public static bool playerConfirm(String input)

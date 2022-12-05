@@ -10,8 +10,7 @@ namespace CSharpTextBasedAdventure
     {
         public static void InBattleC()
         {
-            Dictionary<string, int> playerStats = new Dictionary<string, int>();
-            playerStats.Add("attackDamage", Player.AttackDamage);
+            
         }
     }
 }
